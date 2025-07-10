@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Study Buddy</h2>
+    <p>Simplify your study journey</p>
+    <p class="byline">by Segun Oladeinde</p>
+
+    <button id="newChatBtn">➕ New Chat</button>
+
+    <h3>Chat History</h3>
+    <ul id="chatHistoryList"></ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+      <div class="message bot">Welcome to Study Buddy, I'm here to help simplify your learning!</div>
+    </div>
+
+    <!-- Mode Buttons -->
+    <div class="mode-buttons">
+      <button class="mode-btn active" data-mode="Simplifier">Simplifier</button>
+      <button class="mode-btn" data-mode="Summarizer">Summarizer</button>
+      <button class="mode-btn" data-mode="Step-by-Step">Step-by-Step</button>
+      <button class="mode-btn" data-mode="Glossary">Glossary</button>
+      <button class="mode-btn" data-mode="Tutor Mode">Tutor Mode</button>
+      <button class="mode-btn" data-mode="Quiz Generator">Quiz Generator</button>
+    </div>
+
+    <!-- Input Area -->
+    <form id="inputForm">
+      <textarea id="noteInput" placeholder="Paste your notes here..."></textarea>
+      <button type="submit" id="sendBtn">Send</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
