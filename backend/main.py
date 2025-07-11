@@ -77,10 +77,10 @@ def generate_gemini_response(mode, text):
         First, explain the basic idea in simple words.
         Then ask me a question to check my understanding.
         Based on my answer, decide whether to move forward or review.
-        
+       
         Speak in a friendly and encouraging tone.
         Don't give me the full answer right away — guide me to understand it myself.
-        
+       
         If I ask to solve something, show your thinking process step-by-step.
         At the end, ask a quick follow-up question to make sure I understood.
 
@@ -100,7 +100,7 @@ def generate_gemini_response(mode, text):
     - Leave one blank line between questions for readability
     - Use normal punctuation and capitalization
     - Include different types of questions (e.g., multiple choice, true/false, short answer)
-    
+   
     Example format:
     1. What is the capital of France?
     A) Paris
@@ -129,4 +129,4 @@ async def chat(data: dict):
     chat_id = data.get("chat_id") or int(time.time())
 
     reply = generate_gemini_response(mode, text)
-    return {"reply": reply, "chat_id": chat_id}
+    return {"reply": reply, "chat_id": chat_id} 
